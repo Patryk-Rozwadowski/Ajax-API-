@@ -1,3 +1,7 @@
+.row {
+  display: flex;
+  flex-direction: row;
+}
 @mixin grid($prefix) {
   @for $i from 1 through 12 {
     .col-#{$prefix}-#{$i} {
@@ -30,9 +34,41 @@
   // MOBILE
   @include grid('sm');
 }
+@mixin robotoFont {
+  font-family: 'Roboto', sans-serif;
+}
 
 .section__title {
+  @include robotoFont;
   font-size: 3em;
-  font-family: 'Roboto', sans-serif;
-  text-align:center;
+  text-align: center;
+}
+
+.jokes-board {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.jokes-board__jokes {
+  @include robotoFont;
+  font-size: 2em;
+  margin: 50px;
+}
+
+.jokes-board__btn {
+  @include robotoFont;
+  font-weight: 300;
+  font-size: 2em;
+  background-color: #222;
+  color: #fff;
+  border: 0;
+  padding: 10px;
+  transition: all 400ms ease;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #222;
+    border: 1px solid #222;
+  }
 }

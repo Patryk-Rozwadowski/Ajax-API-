@@ -8,7 +8,7 @@
 
   <title>Random Chuck Norris Jokes</title>
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
   <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 
@@ -17,8 +17,10 @@
     <h1 class="section__title"> Random Chuck Norris Jokes </h1>
   </header>
   <main>
-    <button id="get-joke">Random joke</button>
-    <p id="joke"></p>
+    <section class="jokes-board col-xl-6">
+      <button class="jokes-board__btn" id="get-joke">Random joke</button>
+      <p class="jokes-board__jokes" id="joke"></p>
+      </section>
   </main>
   <script src='js/script.js'></script>
 </body>
