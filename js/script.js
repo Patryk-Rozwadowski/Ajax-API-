@@ -8,7 +8,7 @@ function getQuote() {
     .then(function(resp) {
       return resp.json();
     })
-.then(createTweet);
+    .then(createTweet);
 }
 
 function createTweet(input) {
@@ -31,4 +31,11 @@ function createTweet(input) {
     document.querySelector('.author').innerText = "Author: " + quoteAuthor;
     document.querySelector('.tweet').setAttribute('href', tweet);
   }
+  document.querySelector('.tweet').setAttribute('href', tweet);
 }
+document.addEventListener('DOMContentLoaded', function() {
+  getQuote();
+  document.querySelector('.trigger').addEventListener('click', function() {
+    getQuote();
+  });
+});
