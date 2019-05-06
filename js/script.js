@@ -1,19 +1,12 @@
-var url = 'http://api.icndb.com/jokes/random';
-var jokeButton = document.getElementById('get-joke');
-var jokeOutput = document.getElementById('joke');
+var tweetLink = "https://twitter.com/intent/tweet?text=";
+var quoteUrl = "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1";
 
-jokeButton.addEventListener('click', function() {
-  getJoke();
-});
-
-function getJoke() {
-  var xhr = new XMLHttpRequest();
-  xhr.open('GET', url);
-  xhr.addEventListener('load', function() {
-    var response = JSON.parse(xhr.response);
-    jokeOutput.innerHTML = response.value.joke;
-  });
-  xhr.send();
+function getQuote() {
+  fetch(quoteUrl, {
+      cache: 'no-store'
+    })
+    .then(function(resp)) {
+      return resp.json();
+    })
+.then(createTweet);
 }
-
-getJoke();
