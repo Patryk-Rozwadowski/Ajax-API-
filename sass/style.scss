@@ -44,18 +44,18 @@
   text-align: center;
 }
 
-.jokes-board {
+.quote-board {
   margin: 0 auto;
   text-align: center;
 }
 
-.jokes-board__jokes {
+.quote-board__jokes {
   @include robotoFont;
   font-size: 2em;
   margin: 50px;
 }
 
-.jokes-board__btn {
+.quote-board__btn {
   @include robotoFont;
   font-weight: 300;
   font-size: 2em;

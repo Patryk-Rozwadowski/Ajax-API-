@@ -80,10 +80,10 @@
 
 .section__title { font-family: 'Roboto', sans-serif; font-size: 3em; text-align: center; }
 
-.jokes-board { margin: 0 auto; text-align: center; }
+.quote-board { margin: 0 auto; text-align: center; }
 
-.jokes-board__jokes { font-family: 'Roboto', sans-serif; font-size: 2em; margin: 50px; }
+.quote-board__jokes { font-family: 'Roboto', sans-serif; font-size: 2em; margin: 50px; }
 
-.jokes-board__btn { font-family: 'Roboto', sans-serif; font-weight: 300; font-size: 2em; background-color: #222; color: #fff; border: 0; padding: 10px; transition: all 400ms ease; }
+.quote-board__btn { font-family: 'Roboto', sans-serif; font-weight: 300; font-size: 2em; background-color: #222; color: #fff; border: 0; padding: 10px; transition: all 400ms ease; }
 
-.jokes-board__btn:hover { cursor: pointer; background-color: #fff; color: #222; border: 1px solid #222; }
+.quote-board__btn:hover { cursor: pointer; background-color: #fff; color: #222; border: 1px solid #222; }
