@@ -1,0 +1,38 @@
+@mixin grid($prefix) {
+  @for $i from 1 through 12 {
+    .col-#{$prefix}-#{$i} {
+      $width: 100% / 12 * $i;
+      max-width: $width;
+    }
+  }
+}
+@media only screen and (min-width : 1200px) {
+  // DESKTOP
+  @include grid('xl');
+}
+@media only screen and (min-width : 979px) {
+  // TABLET
+  @include grid('md');
+}
+@media only screen and (max-width : 767px) {
+  // MOBILE
+  @include grid('sm');
+}
+@media only screen and (min-width : 1200px) {
+  // DESKTOP
+  @include grid('xl');
+}
+@media only screen and (min-width : 979px) {
+  // TABLET
+  @include grid('md');
+}
+@media only screen and (max-width : 767px) {
+  // MOBILE
+  @include grid('sm');
+}
+
+.section__title {
+  font-size: 3em;
+  font-family: 'Roboto', sans-serif;
+  text-align:center;
+}
