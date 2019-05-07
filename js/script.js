@@ -27,15 +27,15 @@ function createTweet(input) {
     getQuote();
   } else {
     var tweet = tweetLink + encodeURIComponent(tweetText);
-    document.querySelector('.quote').innerText = quoteText;
-    document.querySelector('.author').innerText = "Author: " + quoteAuthor;
-    document.querySelector('.tweet').setAttribute('href', tweet);
+    document.querySelector('.quote-board__quotes').innerText = quoteText;
+    document.querySelector('.quote-board__author').innerText = "Author: " + quoteAuthor;
+    document.querySelector('.quote-board__tweet').setAttribute('href', tweet); // link nadaje display:none ?????
   }
-  document.querySelector('.tweet').setAttribute('href', tweet);
 }
+
 document.addEventListener('DOMContentLoaded', function() {
   getQuote();
-  document.querySelector('.trigger').addEventListener('click', function() {
+  document.querySelector('.quote-board__btn').addEventListener('click', function() {
     getQuote();
   });
 });

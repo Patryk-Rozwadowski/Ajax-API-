@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>Random Chuck Norris Jokes</title>
+  <title>Random quote machine</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
   <link rel="stylesheet" href="stylesheets/style.css">
@@ -15,15 +17,13 @@
 <body>
   <main>
     <header>
-      <h1>Random quote machine</h1>
+      <h1 class="section__title">Random quote machine</h1>
     </header>
-    <div class="box">
-      <h2 class="quote"></h2>
-      <h3 class="author"></h3>
-    </div>
-    <div>
-      <button class="trigger"> Random quote </button>
-      <a href="#" target="_blank" class="tweet"><i class="fa fa-lg fa-twitter"></i> Tweet</a>
+    <div class="quote-board">
+      <h2 class="quote-board__quotes"></h2>
+      <h3 class="quote-board__author"></h3>
+      <button class="quote-board__btn"> Random quote </button>
+      <a href="#" target="_blank" class="quote-board__tweet"><i class="fab fa-twitter"></i> Tweet</a>
     </div>
   </main>
   <script src='js/script.js'></script>
